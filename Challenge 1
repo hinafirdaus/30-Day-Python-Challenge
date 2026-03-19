@@ -7,3 +7,21 @@ Extras:
 
 Add on to the previous program by asking the user for another number and printing out that many copies of the previous message. (Hint: order of operations exists in Python)
 Print out that many copies of the previous message on separate lines. (Hint: the string "\n is the same as pressing the ENTER button)
+
+name = input("Hey! your name please? ")
+print("name: "+name)
+age = int(input("How old are you? "))
+print(f"Age of {name} is {age} old")
+curr_year = 2026
+later_year = curr_year-age+100
+print(f"In year {later_year} you will be 100!")
+
+while True:
+    print("Know what more ages it will be 100 years? enter 'y' to continue and 'n' to exit")
+    if input() == "y":
+        new_age = int(input("How many more ages you want to know? "))
+        later_year = curr_year-new_age+100
+        print(f"In year {later_year} you will be 100!")
+    else:
+        print("Good bye!")
+        break
